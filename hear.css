@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+
+.mainContainer {
+    text-align: center;
+}
+
+.navWrapper {
+    background-color: #F2F2F2;
+    color: black;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hearLogo {
+    background: url("imageFolder/hearLogo.svg");
+    height: 37.85px;
+    background-repeat: no-repeat;
+    order: 1;
+    width: 182px;
+    margin: 17px 109px 19px 284px;
+}
+
+.rightLogos {
+    order: 2;
+}
+
+.images {
+    display: inline-block;
+    margin-right: 13.16px;
+}
+
+.forbesLogo {
+    background: url("imageFolder/forbes.svg");
+    background-repeat: no-repeat;
+    width: 73.09px;
+    height: 19px;
+    margin-top: 26.23px;
+    vertical-align: super;
+}
+
+.biLogo {
+    background: url("imageFolder/business-insider.svg");
+    background-repeat: no-repeat;
+    width: 83.32px;
+    height: 40.2px;
+    margin-top: 16px;
+    vertical-align: top;
+}
+
+.sirusLogo {
+    background: url("imageFolder/SiriusLogo.svg");
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 27.04px;
+    margin-top: 22.58px;
+}
+
+.webmdLogo {
+    background: url("imageFolder/webmd.svg");
+    background-repeat: no-repeat;
+    width: 85.94px;
+    height: 18.66px;
+    vertical-align: super;
+}
+
+.heroImage {
+    background: url("imageFolder/Hero.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 498.81px;
+    margin: 55px auto 0;
+    width: 711px;
+    
+}
