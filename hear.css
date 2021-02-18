@@ -73,5 +73,37 @@ body {
     min-height: 498.81px;
     margin: 55px auto 0;
     width: 711px;
-    
+}
+
+.heroTextWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertImage {
+    background: url("imageFolder/verticalRectangle.svg");
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 268px;
+    order: 1;
+    position: relative;
+
+}
+
+.heroText {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 78px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding: 0 49% 0 0%;
+    text-align: left;
+    order: 2;
+    position: absolute;
+    margin: 19px 0 0 32px;
+}
+
+.textDecor {
+    text-decoration: underline;
+    text-decoration-color: #FFAE0D;
 }
