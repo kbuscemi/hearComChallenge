@@ -1,3 +1,16 @@
+## Frontend Developer Challenge - Kaylee Buscemi
+To access the code and view the page on localhost:3000 please follow the steps below:
+- To access the git repo 'hearComChallenge' click on this url: https://github.com/kbuscemi/hearComChallenge
+- Clone the repo to your local computer. You can name the folder accordingly.
+- Open up VS code or another dev environment, open up terminal, and then cd into the following folder: product.frontend-coding-challenge
+- Once you are in this folder run npm start. You should see the following message appear: app listening on port 3000. Once you see this     
+  message you can view the web page here: http://localhost:3000/
+
+Description of my solution
+- As indicated in the instructions I used vanilla Javascript to code the functionality and design of the web page. Focusing on the functionality part, I chose to group each radio button group within its own form tag rather than group them together under one form tag so I could have more flexibility with the functionality of the next button and ease when saving the responses. When a user clicks on the next button it will save their response as well as bring them to the next slide. The next button is initally disabled and is only enabled once a response is selected. Rather then display a message indicting a response needs to be selected the button is greyed out. The web page is responsive and can be viewed on multiple devices and major browsers.
+
+-------------------------------------------------------------------------------
+
 ## Frontend Developer Challenge
 
 Thank you for applying to hear.com as a frontend developer. We would like to get a general idea of your expertise and give you the chance to show us your skills.
