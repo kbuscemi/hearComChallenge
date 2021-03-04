@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./assets/index.css">
+    </head>
+    <body>
+        <div class="mainContainer">
+          <div class="navWrapper">
+            <div class="hearLogo "></div>
+            <div class="rightLogos">
+                <div class="forbesLogo images"></div>
+                <div class="biLogo images"></div>
+                <div class="sirusLogo images"></div>
+                <div class="webmdLogo images"></div>
+            </div>
+          </div>
+          <div class="heroImage logos"></div>
+          <div class="heroTextWrapper">
+              <div class="vertImage"></div>
+              <p class="heroText">
+                  th<span class="textDecor">is device does more</span> th<span class="textDecor">an just "aid"
+                  your</span> he<span class="textDecor">aring</span>
+              </p>
+          </div>
+          <div class="middleWrapper">
+            <p class="pageContent middleContent content">
+                The leading hearing aid manufacturer, Signia, just launched its smallest 
+                and most powerful weapon against hearing loss.
+            </p>
+            <p class="pageContent middleContent content">
+                In the last couple of years, many of the world’s best hearing aid 
+                engineers have been working restlessly on this top secret project 
+                to develop a new technology that is so small and sophisticated that 
+                it truly changes people’s lives.
+            </p>
+            <p class="pageContent middleContent content">
+                The result: In 2020, Signia (formerly Siemens) finally revealed its 
+                ultimate secret weapon that is smaller, stronger, and smarter than ever 
+                before! The device is called the Silk X – and it will change your life.
+            </p>
+          </div>
+          <div class="bottomWrapper">
+              <div class="questionaire">
+                <form id="questionaire"  onsubmit="results();return false" action="#" method="post">
+                    <div class="questions">
+                        <p class="bottomContent pageContent content boldContent">
+                            What has prevented you from getting hearing aids sooner?
+                        </p>
+                        <div class="topPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" class="testing" name="question" value="Not sure if I need them" onclick="questionaire()">
+                                <label class="questionBtns content boldContent" for="Not sure if I need them">
+                                    Not sure if <span>I need them</span>
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" class="testing" name="question" value="I can’t afford them" onclick="questionaire()">
+                                <label class="questionBtns content boldContent" for="I can’t afford them">
+                                    I can’t afford <span>them</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bottomPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" class="testing" name="question" value="I need more information" onclick="questionaire()">
+                                <label class="questionBtns content boldContent" for="I need more information">
+                                    I need more <span>information</span>
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" class="testing" name="question" value="I’ve been too busy" onclick="questionaire()">
+                                <label class="questionBtns content boldContent" for="I’ve been too busy">
+                                    I’ve been <span>too busy</span>
+                                </label>   
+                            </div>
+                        </div>
+                        <button type="submit" submit="submit" value="button" id="btn" class="nextBtn boldContent pageContent content disableBtn" onclick="currentSlide(1)";>Next</button>
+                    </div>
+                </form>
+                <form onsubmit="resultsOne();return false" action="#" method="post">
+                    <div class="questions">
+                        <p class="bottomContent pageContent content boldContent">
+                          How old are your hearing aids?
+                        </p>
+                          <div class="topPart">
+                              <div class="halfs leftHalf">
+                                  <input type="radio" class="testing" name="question1" value="2 years old or less" onclick="questionaireOne()">
+                                  <label class="questionBtns content boldContent" for="2 years old or less">
+                                      2 years old <span>or less</span>
+                                  </label>
+                              </div>
+                              <div class="halfs">
+                                  <input type="radio" class="testing" name="question1" value="3 years old" onclick="questionaireOne()">
+                                  <label class="questionBtns content boldContent transformContext" for="3 years old" >
+                                      3 years old
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="bottomPart">
+                              <div class="halfs leftHalf">
+                                  <input type="radio" class="testing" name="question1" value="4 years old" onclick="questionaireOne()">
+                                  <label class="questionBtns content boldContent transformContext" for="4 years old">
+                                      4 years old
+                                  </label>
+                              </div>
+                              <div class="halfs">
+                                  <input type="radio" class="testing" name="question1" value="5 years old or more" onclick="questionaireOne()">
+                                  <label class="questionBtns content boldContent" for="5 years old or more">
+                                      5 years old <span>or more</span>
+                                  </label>   
+                              </div>
+                          </div>
+                          <button type="submit" submit="submit" value="button" id="btn1" class="nextBtn boldContent pageContent content disableBtn" onclick="currentSlide(1)";>Next</button>
+                      </div>
+                </form>
+                <form onsubmit="resultsTwo();return false" action="#" method="post">
+                    <div class="questions">
+                        <p class="bottomContent pageContent content boldContent">
+                        How much does hearing loss restrict you in your daily life?
+                        </p>
+                        <div class="topPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" class="testing" name="question2" value="Not at all" onclick="questionaireTwo()">
+                                <label class="questionBtns content boldContent transformContext" for="Not at all">
+                                    Not at all
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" class="testing" name="question2" value="Barely" onclick="questionaireTwo()">
+                                <label class="questionBtns content boldContent transformContext" for="Barely">
+                                    Barely
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bottomPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" class="testing" name="question2" value="Moderately" onclick="questionaireTwo()">
+                                <label class="questionBtns content boldContent transformContext" for="Moderately" >
+                                    Moderately
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" class="testing" name="question2" value="Severely" onclick="questionaireTwo()">
+                                <label class="questionBtns content boldContent transformContext" for="Severely">
+                                    Severely
+                                </label>   
+                            </div>
+                        </div>
+                        <button type="submit" submit="submit" value="button" id="btn2" class="nextBtn boldContent pageContent content disableBtn" onclick="currentSlide(1)";>Next</button>
+                    </div>
+                </form>
+                <form onsubmit="resultsThree();return false" action="#" method="post">
+                    <div class="questions">
+                        <p class="bottomContent pageContent content boldContent">
+                            When do you want to improve your hearing?
+                        </p>
+                        <div class="topPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" name="question3" value="As soon as possible" onclick="questionaireThree()">
+                                <label class="questionBtns content boldContent" for="As soon as possible">
+                                    As soon <span>as possible</span>
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" name="question3" value="Within the next few weeks" onclick="questionaireThree()">
+                                <label class="questionBtns content boldContent" for="Within the next few weeks">
+                                    Within the <span>next few weeks</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bottomPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" name="question3" value="Within the next few months" onclick="questionaireThree()">
+                                <label class="questionBtns content boldContent" for="Within the next few months">    
+                                    Within the next <span>few months</span>
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" name="question3" value="I don't know" onclick="questionaireThree()">
+                                <label class="questionBtns content boldContent transformContext" for="I don't know">
+                                    I don't know
+                                </label>   
+                            </div>
+                        </div>
+                        <button type="submit" submit="submit" value="button" id="btn3" class="nextBtn boldContent pageContent content disableBtn" onclick="currentSlide(1)";>Next</button>
+                    </div>
+                </form>
+                <form onsubmit="resultsFour();return false" action="#" method="post">
+                    <div class="questions">
+                        <p class="bottomContent pageContent content boldContent">
+                            What is your current employment status?
+                        </p>
+                        <div class="topPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" name="question4" value="Employed" onclick="questionaireFour()">
+                                <label class="questionBtns content boldContent transformContext" for="Employed">
+                                    Employed
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" name="question4" value="Unemployed" onclick="questionaireFour()">
+                                <label class="questionBtns content boldContent transformContext" for="Unemployed">
+                                    Unemployed
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bottomPart">
+                            <div class="halfs leftHalf">
+                                <input type="radio" name="question4" value="Retired" onclick="questionaireFour()">
+                                <label class="questionBtns content boldContent transformContext" for="Retired">
+                                    Retired
+                                </label>
+                            </div>
+                            <div class="halfs">
+                                <input type="radio" name="question4" value="Homemaker" onclick="questionaireFour()">
+                                <label class="questionBtns content boldContent transformContext" for="Homemaker">
+                                    Homemaker
+                                </label>   
+                            </div>
+                        </div>
+                        <button type="submit" submit="submit" value="button" id="btn4" class="nextBtn boldContent pageContent content disableBtn" onclick="currentSlide(1)";>Next</button>
+                    </div>
+                </form>
+                    <div class="questions resultsPage" id="resultsPage">
+                        <p class="bottomContent pageContent content boldContent resultHeader">
+                            We appreciate your feedback!
+                            You can view your responses below.
+                        </p>
+                        <div class="resultWrapper">
+                            <p class="resultContent content boldContent">
+                                What has prevented you from getting hearing aids sooner?
+                            </p>
+                            <div class="results content" id="results"></div>
+                        </div>
+                        <div class="resultWrapper">
+                            <p class="resultContent content boldContent">
+                                How old are your hearing aids?
+                            </p>
+                            <div class="results content" id="resultsOne"></div>
+                        </div>
+                        <div class="resultWrapper">
+                            <p class="resultContent content boldContent">
+                                How much does hearing loss restrict you in your daily life?
+                            </p>
+                            <div class="results content" id="resultsTwo"></div>
+                        </div>
+                        <div class="resultWrapper">
+                            <p class="resultContent content boldContent">
+                                When do you want to improve your hearing?
+                            </p>
+                            <div class="results content" id="resultsThree"></div>
+                        </div>
+                        <div class="resultWrapper">
+                            <p class="resultContent content boldContent">
+                                What is your current employment status?
+                            </p>
+                            <div class="results content" id="resultsFour"></div>
+                        </div>
+                    </div>
+                        <a id="prevArrow" class="previousArrow arrows disableTag" onclick="currentSlide(-1);"></a>
+                        <a id="nextArrow" class="nextArrow arrows" onclick="currentSlide(1);"></a>
+                  </div>
+          </div>
+        </div>
+        
+        <script src="assets/index.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "product.frontend-coding-challenge",
+  "version": "1.0.0",
+  "description": "Thank you for applying to hear.com as a frontend developer. We would like to get a general idea of your expertise and give you the chance to show us your skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" ",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbuscemi/hearComChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbuscemi/hearComChallenge/issues"
+  },
+  "homepage": "https://github.com/kbuscemi/hearComChallenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

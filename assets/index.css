@@ -1,0 +1,403 @@
+
+body {
+    margin: 0 auto;
+}
+
+.mainContainer {
+    text-align: center;
+}
+
+.navWrapper {
+    background-color: #F2F2F2;
+    color: black;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.hearLogo {
+    background: url("imageFolder/hearLogo.svg");
+    background-repeat: no-repeat;
+    height: 37.85px;
+    order: 1;
+    width: 182px;
+    margin-top: 17px;
+    margin-right: 110px;
+    margin-bottom: 19px;
+    margin-left: inherit;
+}
+
+.rightLogos {
+    order: 2;
+}
+
+.images,
+.halfs {
+    display: inline-block;
+}
+
+.images {
+    margin-right: 13.16px;
+}
+
+.forbesLogo {
+    background: url("imageFolder/forbes.svg");
+    width: 73.09px;
+    height: 19px;
+    margin-top: 26.23px;
+    vertical-align: super;
+    background-repeat: no-repeat;
+}
+
+.biLogo {
+    background-repeat: no-repeat;
+    background: url("imageFolder/business-insider.svg");
+    width: 83.32px;
+    height: 40.2px;
+    margin-top: 16px;
+    vertical-align: top;
+}
+
+.sirusLogo {
+    background: url("imageFolder/SiriusLogo.svg");
+    width: 129px;
+    height: 27.04px;
+    margin-top: 22.58px;
+    background-repeat: no-repeat;
+}
+
+.webmdLogo {
+    background: url("imageFolder/webmd.svg");
+    width: 85.94px;
+    height: 18.66px;
+    vertical-align: super;
+    background-repeat: no-repeat;
+}
+
+.heroImage {
+    background: url("imageFolder/Hero.svg");
+    height: 100%;
+    min-height: 498.81px;
+    margin: 55px auto 0;
+    max-width: 711px;
+    background-repeat: no-repeat;
+}
+
+.heroTextWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    max-width: 788px;
+}
+
+.vertImage {
+    background: url("imageFolder/verticalRectangle.svg");
+    background-repeat: no-repeat;
+    width: 107px;
+    height: 268px;
+    order: 1;
+    position: relative;
+    margin-right: 85%;
+}
+
+.heroText {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 78px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 19px auto auto;
+    max-width: 708px;
+    order: 2;
+    position: absolute;
+}
+
+.textDecor {
+    text-decoration: underline;
+    text-decoration-color: #FFAE0D;
+    text-decoration-thickness: from-font;
+}
+
+.middleWrapper {
+    margin: 45px auto auto;
+    max-width: 698px;
+    text-align: left;
+}
+
+.content {
+    font-family: sans-serif;
+}
+
+.pageContent {
+    line-height: 36px;
+}
+
+.middleContent {
+    font-size: 21px;
+}
+
+.questionaire {
+    position: relative;
+}
+
+.bottomWrapper {
+    max-width: 711px;
+    height: 513px;
+    background-color: #F0F0F0;
+    margin: 45px auto 55px;
+}
+
+.boldContent {
+    font-weight: 700;
+}
+
+.bottomContent {
+    font-size: 24px;
+    padding: 45px 21% 0;
+    margin: 0 0 38px 0;
+}
+
+.questionBtns {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    display: inline-grid;
+    margin: 0;
+    padding: 14px 13px 15px 10px;
+}
+
+.transformContext {
+    transform: translate(0%, 14%);
+}
+
+.topPart {
+    margin-bottom: 33px;
+}
+
+.halfs {
+    width: 199px;
+    height: 77px;
+    background-color: white;
+}
+
+.leftHalf {
+    margin-right: 20px;
+}
+
+input {
+    vertical-align: -webkit-baseline-middle;
+}
+
+.nextBtn {
+    background-color: #FFAE0D;
+    color: white;
+    width: 190px;
+    height: 44px;
+    border: none;
+    margin-top: 92px;
+    font-size: 21px;
+}
+
+.arrows {
+    display: inline-block;
+    padding: 9px;
+    width: 0;
+    height: 0;
+    transform: rotate(135deg);
+    top: 51%;
+    position: absolute;
+}
+
+.previousArrow {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: none;
+    border-top: none;
+    left: 10%;
+}
+
+.nextArrow {
+    border-bottom: none;
+    border-right: none;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    right: 10%;
+}
+
+.disableTag {
+    pointer-events: none;
+    border-right: 3px solid rgba(58, 58, 58, 0.15);
+    border-bottom: 3px solid rgba(58, 58, 58, 0.15);
+}
+
+.disableBtn {
+    pointer-events: none;
+    background-color: grey;
+}
+
+.resultHeader {
+    padding: 4% 21% 0;
+    margin: 0% auto 4%;
+    line-height: 1.82rem;
+}
+
+.resultContent {
+    font-size: 14px;
+}
+
+.resultWrapper {
+    margin: 0% auto 4%;
+}
+
+@media(max-width: 785px) {
+    .heroText {
+        margin: 19px auto auto 2%;
+        max-width: 711px;
+    }
+}
+
+/* @media(max-width: 751px) { */
+@media(max-width: 551px) {
+    .navWrapper {
+        height: 125px;
+        flex-direction: column;
+    }
+
+    .hearLogo {
+        width: 97px;
+        margin: 22px auto 0;
+        background: url("imageFolder/LogoMB.svg");
+        background-repeat: no-repeat;
+    }
+    
+    .forbesLogo {
+        background: url("imageFolder/forbesMB.svg");
+        width: 62.66px;
+        height: 17px;
+        margin-top: 0;
+        background-repeat: no-repeat;
+    }
+    
+    .biLogo {
+        margin-top: 0;
+        background: url("imageFolder/BILogoMB.svg");
+        width: 70.93px;
+        height: 34.22px;
+        background-repeat: no-repeat;
+    }
+    
+    .sirusLogo {
+        margin-top: 0;
+        background: url("imageFolder/SiriusMB.svg");
+        width: 107.02px;
+        height: 23.02px;
+        background-repeat: no-repeat;
+    }
+    
+    .webmdLogo {
+        background: url("imageFolder/webmdMB.svg");
+        width: 68.44px;
+        height: 15.88px;
+        background-repeat: no-repeat;
+    }
+
+    .heroImage {
+        margin: 0 auto;
+    }
+
+    .rightLogos {
+        margin-top: 8px;
+    }
+
+    .heroTextWrapper {
+        margin-top: 23px;
+    }
+
+    .vertImage {
+        width: 102px;
+        margin-right: 72%;
+        height: 166px;
+    }
+
+    .heroText {
+        max-width: 351px;
+        font-size: 33px;
+        line-height: 49px;
+        margin: 7px auto auto 12px;
+    }
+
+    .middleWrapper {
+        margin: 45px 16px 35px;
+    }
+
+    .bottomWrapper {
+        margin: 0 auto;
+        height: 614px;
+        max-width: 100%;
+    }
+
+    .bottomContent {
+        line-height: 32px;
+        padding: 35px 14px 0px 19px;
+        margin: 0 0 25px 0;
+    }
+
+    .topPart {
+        margin-bottom: 0;
+    }
+
+    .halfs {
+        width: 272px;
+        height: 77px;
+        margin-bottom: 12px;
+    }
+
+    .nextBtn {
+        margin: 35px 0;
+    }
+
+    .leftHalf {
+        margin-right: 0;
+    }
+
+    .arrows {
+        top: 47%;
+        padding: 10px;
+    }
+
+    .nextArrow {
+        right: 5%;
+    }
+
+    .previousArrow {
+        left: 5%;
+    }
+
+    .questionBtns {
+        padding: 14px 38px 0px 26px;
+        width: 55%;
+    }
+
+    .resultWrapper {
+        margin: 0% auto 8%;
+    }
+}
+
+@media(max-width: 420px) {
+    .heroImage {
+        background: url("imageFolder/HeroMB.svg");
+        min-height: 320px;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 325px) {
+    .halfs {
+        width: 237px;
+    }
+}
